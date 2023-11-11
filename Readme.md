@@ -47,3 +47,9 @@ print(titanic_df.head())
 print(non_linear_correlation(titanic_df['age'], titanic_df['class']))
 print(correlation_dataframe(titanic_df))
 correlation_heatmap(titanic_df)
+```
+
+## Output 
+
+![img.png](img.png)
+

@@ -148,7 +148,7 @@ def correlation_dataframe(df):
             # find the correlation between the two columns
             correlation_df.loc[i, j] = non_linear_correlation(df[i], df[j])
             # print the correlation value
-            print('The correlation between {} and {} is {}'.format(i, j, correlation_df.loc[i, j]))
+            #print('The correlation between {} and {} is {}'.format(i, j, correlation_df.loc[i, j]))
     return correlation_df
 
 # make a function that will take a Pandas data frame and draw or display a heat map of correlation values between the columns
@@ -161,7 +161,7 @@ def correlation_heatmap(df):
     # make a empty dataframe
     correlation_df = correlation_dataframe(df)
     # print correlation datafram is ready
-    print('Correlation dataframe is ready')
+    #print('Correlation dataframe is ready')
     # plot the heatmap
     sns.heatmap(correlation_df, annot=True)
     plt.show()
