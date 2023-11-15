@@ -51,5 +51,21 @@ correlation_heatmap(titanic_df)
 
 ## Output 
 
+
 ![img.png](img.png)
 
+## Interpretation
+
+these are the accuracy of prediction of dependent variable by the independent variable. If the number is 0 
+then it means that predictability (and correlation) by extension is 0. Basically, you can't really say anything. 
+If the number is 1 then it means that the predictability is 1. So, you can say that the correlation is 1.
+
+
+### Why are the numbers not same diagonally ?
+
+Becuase it is totally possible that fare can very accurately give you passenger class, but if you give someone passenger class, you can't really say what the fare is with the same accuracy the other way around.
+
+## Use cases
+
+1. You can directly this function to find out the correlation between various features in your data set. Linear as well as correlation. It's good as the first insight. 
+2. You'll better know which features to 

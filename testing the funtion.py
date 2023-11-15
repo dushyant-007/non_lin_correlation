@@ -6,7 +6,7 @@ import seaborn as sns
 
 
 # start the main function
-if __name__ == "__mai1n__":
+if __name__ == "__main__":
     # make two columns of numerical data that is slightly correlated
     column1 = np.random.randint(1, 100, 100)
     column2 = column1 + 0.25 * np.random.randint(1, 10, 100) * np.random.randint(1, 10, 100)
@@ -34,7 +34,7 @@ if __name__ == "__mai1n__":
     # find the correlation between these two columns
     column1[5:8] = [None] * len(column1[5:8])
     column2[15:20] = [None] * len(column2[15:20])
-    column1, column2 = pd.Series(column1), pd.Series(column2)
+    column1, column2 = pd.Series(column1, dtype=object), pd.Series(column2, dtype=float)
     print(non_linear_correlation(column1, column2))
 
     # make two catergorical columns that are correlated with each other
@@ -46,7 +46,7 @@ if __name__ == "__mai1n__":
     column1[5:8] = [None] * len(column1[5:8])
     column2[15:20] = [None] * len(column2[15:20])
     # find the correlation between these two columns
-    column1, column2 = pd.Series(column1), pd.Series(column2)
+    column1, column2 = pd.Series(column1, dtype= object), pd.Series(column2, dtype=float)
     print(non_linear_correlation(column1, column2))
 
 
